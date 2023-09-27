@@ -1,0 +1,387 @@
+*{
+    padding: 0;
+    margin: 0;
+    transition: all 1s ease;
+}
+body{
+    background-color: #000000;
+}
+.cuerpo{
+    background-color:  #e3e4e5;
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+.inicio{
+    padding: 10% 10%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    overflow: hidden;
+}
+.titulo{
+    font-family: 'Patua One', cursive;
+    letter-spacing: 1px;
+    color: #756a68;
+    font-size: 20px;
+    width: max-content;
+}
+.b-habilidades,.b-contacto{
+    transition: all .5s ease;
+    font-family: 'Patua One', cursive;
+    opacity: 0;
+    color: #aaadb1;
+    background-color: transparent;
+    font-size: 19px;
+    height: 60px;
+    width: 200px;
+    border: 3px solid #aaadb1;
+    display: inline-block;
+    margin: 40px 55px 0 0;
+    text-align: center;
+    text-justify: auto;
+    animation-name: botones;
+    animation-duration: 3s;
+    animation-delay: 6.4s;
+    animation-fill-mode: forwards;
+}
+@keyframes botones {
+    30%{opacity: 1;}
+    100%{opacity: 1;
+        cursor: pointer;}
+}
+.b-contacto:hover,.b-habilidades:hover{
+    border-color: #8b8c8d;
+    color: #8b8c8d;
+    cursor: pointer;
+}
+.sobre-mi{
+    font-family: 'Raleway', sans-serif;
+    opacity: 0;
+    margin-top: 40px;
+    color: #8b8c8d;
+    font-size: 18px;
+    animation-name: sobremi;
+    animation-duration: 3s;
+    animation-delay: 6.4s;
+    animation-fill-mode: forwards;
+}
+@keyframes sobremi {
+    30%{opacity: 1;}
+    100%{opacity: 1;}
+}
+.animacion{
+    position: absolute;
+    opacity: 0;
+    padding-left: 30px;
+    right: 10%;
+    bottom: 30%;
+    width: 40%;
+    animation-name: animacion1;
+    animation-duration: 3s;
+    animation-delay: 6.5s;
+    animation-fill-mode: forwards;
+}
+@keyframes animacion1 {
+    0%{transform: translateX(10%);}
+    85%{opacity: 1;}
+    86%{transform: translateX(0%);}
+    100%{opacity: 1;}
+}
+.mode{
+    height: 30px;
+    opacity: 0;
+    width: 30px;
+    position: absolute;
+    top: 4%;
+    right: 2%;
+    animation-name: mode;
+    animation-duration: 3s;
+    animation-delay: 7.6s;
+    animation-fill-mode: forwards;
+}
+@keyframes mode {
+    0%{transform: translateY(-120%);}
+    30%{opacity: 1;}
+    40%{transform: translateY(0%);}
+    100%{opacity: 1;
+        cursor: pointer;}
+}
+.dark{
+    height: inherit;
+    position: absolute;
+}
+.ligth{
+    height: inherit;
+    position: absolute;
+    display: block;
+    transform: scale(0.01);
+}
+
+
+
+
+
+
+
+
+
+/*      HABILIDADES    */
+.habilidades{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    overflow: hidden;
+    overflow-y: scroll;
+    transform: translateY(100%);
+    display: flex;
+    flex-wrap: wrap;
+}
+.codigo{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.contenedorCodigos{
+    width: 100%;
+    height: min-content;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.php,.html_css,.js{
+    height: 50%;
+    width: 29%;
+    margin: 0 0 2.5% 2.5%;
+    display: flex;
+    padding: 20px 3px;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10%;
+    background-color: #dddddd;
+    border-radius: 10px;
+}
+.vietas{
+    margin: 10px;
+    margin-bottom: 0;
+    font-family: 'Raleway', sans-serif;
+    color: #8b8c8d;
+    font-size: 18px;
+}
+.iconoCodigo{
+    height: 55%;
+    width: 55%;
+    max-width: 130px;
+    max-height: 130px;
+    min-width: 100px;
+    min-height: 100px;
+    margin-bottom: 20px;
+}
+.otros{
+    width: 100%;
+    height: 30%;
+    text-align: center;
+}
+.otrosCodigos{
+    background-color: #dddddd;
+    width: 89%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding: 20px;
+    margin: 2%;
+}
+.subT{
+    font-family: 'Patua One', cursive;
+    color: #756a68;
+    font-size: 25px;
+    letter-spacing: 1px;
+}
+#c,#python,#java{
+    height: 60px;
+    width: 60px;
+}
+#c{
+    position: absolute;
+    left: 12%;
+}
+#python{
+    position: absolute;
+    right: 12%;
+}
+.datos{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.sql{
+    margin-top: 10%;
+    margin-left: 20px;
+    width: 40%;
+    height: 70%;
+    text-align: center;
+}
+.skills{
+    width: 100%;
+    height: min-content;
+    background-color: #dddddd;
+    border-radius: 10px;
+    padding: 12px 3px 20px 3px;
+}
+#uml{
+    height: 90px;
+    width: 80px;
+    margin-top: 30px;
+}
+
+
+
+
+
+
+
+
+
+/*      CONTACTO    */
+.contacto{
+    padding: 10% 10%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: #000000;
+    overflow: hidden;
+    transform: translateY(100%);
+}
+
+
+
+
+
+
+
+
+
+/*      MENÚ     */
+.contenedor-indicador{
+    background-color: #000000;
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    z-index: 1;
+}
+.centro,.derecha,.izquierda{
+    font-family: 'Patua One', cursive;
+    color: #e3e4e5;
+    display: inline;
+    opacity: 0;
+    margin: 15px;
+    font-size: 18px;
+    width: max-content;
+    animation-name: menu;
+    animation-delay: 6.4s;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+@keyframes menu {
+    30%{opacity: 1;}
+    100%{opacity: 1;}
+}
+.centro{
+    border-bottom: 3px solid #e3e4e5;
+    margin: 12px;
+    padding: 3px 8px;
+}
+.derecha{
+    position: absolute;
+    right: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.izquierda{
+    position: absolute;
+    left: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.iconos{
+    display: inline;
+    height: 15px;
+    width: 15px;
+    padding: 5px;
+}
+#id_sobremi,#inicio2,#inicio3,#habilidades,#id_sobremi{
+    cursor: pointer;
+}
+#id_sobremi,#inicio2,#inicio3{
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*      DARK MODE      */
+.cuerpoDARK{
+    background-color:  #555555;
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+.tituloDARK{
+    font-family: 'Patua One', cursive;
+    letter-spacing: 1px;
+    color: #e3e4e5;
+    font-size: 20px;
+    width: max-content;
+}
+.b-habilidadesDARK,.b-contactoDARK{
+    transition: all .5s ease;
+    font-family: 'Patua One', cursive;
+    color: #bbbbbb;
+    background-color: transparent;
+    font-size: 19px;
+    cursor: pointer;
+    height: 60px;
+    width: 200px;
+    border: 3px solid;
+    display: inline-block;
+    margin: 40px 55px 0 0;
+    text-align: center;
+    text-justify: auto;
+}
+.b-habilidadesDARK:hover,.b-contactoDARK:hover{
+    color: #e3e4e5;
+    border-color: #e3e4e5;
+    cursor: pointer;
+}
+.sobre-miDARK{
+    font-family: 'Raleway', sans-serif;
+    margin-top: 40px;
+    color: #e3e4e5;
+    font-size: 18px;
+}

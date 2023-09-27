@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+
+    <!-- CONEXIÓN A API DE GOOGLE FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Fuente Anek Odia :font-family: 'Anek Odia', sans-serif;-->
+    <link href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap" rel="stylesheet">
+
+    <!-- Fuente Rubik Glitch :font-family: 'Rubik Glitch', cursive;-->
+    <!-- Fuente Rubik Puddles :font-family: 'Rubik Puddles', cursive;-->
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Glitch&family=Rubik+Puddles&display=swap" rel="stylesheet">
+
+    <!-- Fuente Roleway :font-family: 'Raleway', sans-serif;-->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="inicio.css">
+
+    <title>Angel Herrera</title>
+</head>
+<body>
+    <div class="cuerpo" id="id_cuerpo">
+
+        <!-- MANÚ -->
+        <div class="contenedor-indicador">
+            <div class="izquierda" id="id_izquierda"><img class="iconos" id="arriba" src="img/arriba.png" alt=""><p id="logo">Algo</p><p id="inicio2" onclick="Inicio()">Inicio</p><p id="inicio3" onclick="Habilidades()">Habilidades</p></div>
+
+            <div class="centro" id="id_centro"><p id="inicio">Inicio</p></div>
+
+            <div class="derecha" id="id_derecha"><p id="habilidades" onclick="Habilidades()">Habilidades</p><p id="id_sobremi" onclick="Sobre_mi()">Sobre mi</p><img class="iconos" id="abajo" src="img/abajo.png" alt=""></div>
+        </div>
+
+        <!-- INICIO -->
+        <div class="inicio" id="id_inicio">
+            <div class="titulo" id="id_titulo">
+                <h1 class="texto_titulo"><span class="typed"></h1>
+                <span class="typed2">
+                <div id="text0">
+                    <h1 class="texto_titulo">Hello...</h1>
+                    <h1 class="texto_titulo">ANGEL HERRERA</h1>
+                </div>
+                <div id="text1">
+                    <p></p>
+                    <p> Programador</p>
+                </div>
+            </div>
+            <button class="b-habilidades" id="id_b-habilidades" onclick="Habilidades()">Habilidades</button>
+            <button class="b-contacto" id="id_b-contacto">Contacto</button>
+            <p class="sobre-mi" id="id_sobre-mi">Tengo 20 años, apasionado por la tecnología, el avance,<br>presenciar y ser partícipe del potencial de nuestras<br>capacidades como humanos para ayudar a otros y <br> moldear en conjunto el futuro del que todos somos parte.</p>
+            <div class="animacion">
+                <lottie-player src="https://assets2.lottiefiles.com/packages/lf20_tFYxgv.json" speed="0.8" loop autoplay ></lottie-player>
+            </div>
+            <div class="mode"><img class="dark" id="id_dark" onclick="Volver_oscuro()" src="img/dark.png" alt=""> <img class="ligth" id="id_ligth" onclick="Volver_claro()" src="img/ligth.png" alt=""></div>
+        </div>
+
+        <!-- HABILIDADES -->
+        <div class="habilidades" id="id_habilidades">
+            <!-- CODIGO Y LENGUAJES -->
+            <div class="codigo">
+                <div class="contenedorCodigos">
+                    <div class="php">
+                        <img src="img/php.png" alt="" class="iconoCodigo">
+                        <p class="vietas">-POO</p>
+                        <p class="vietas">-DB</p>
+                        <p class="vietas">-Composer</p>
+                    </div>
+                    <div class="html_css">
+                        <img src="img/html.png" alt="" class="iconoCodigo">
+                        <p class="vietas">-CSS</p>
+                        <p class="vietas">-Responsive</p>
+                        <p class="vietas">-Animaciones</p>
+                    </div>
+                    <div class="js">
+                        <img src="img/js.png" alt="" class="iconoCodigo">
+                        <p class="vietas">-POO</p>
+                        <p class="vietas">-DOOM</p>
+                        <p class="vietas">-jQuery</p>
+                    </div>
+                </div>
+                <br>
+                <div class="otros">
+                    <h2 class="subT">Otros</h2>
+                    <div class="otrosCodigos">
+                        <img src="img/c.png" alt="" id="c">
+                        <img src="img/java.png" alt=""  id="java">
+                        <img src="img/python.png" alt=""  id="python">
+                    </div>
+                </div>
+            </div>
+            <!-- BADES DE DATOS -->
+            <div class="datos">
+                <div class="sql">
+                    <div class="skills">
+                        <img src="img/sql.png" alt="" class="iconoCodigo">
+                        <p class="vietas">-Levantamiento de información para la creación de bases de datos</p>
+                        <p class="vietas">-Normalización</p>
+                        <p class="vietas">-CRUD</p>
+                        <img src="img/uml.png" alt="" id="uml">
+                        <p class="vietas">-UML</p>
+                    </div>
+                </div>
+                <div class="sql">
+                    <canvas id="grafico"></canvas>
+                </div>
+            </div>
+        </div>
+
+        <!-- CONTACTO -->
+        <div class="contacto" id="contacto">
+            
+        </div>
+    </div>
+
+    <!-- Librería Lottie.js-->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    
+    <!-- Librería Typed.js-->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <!-- Librería Chard.js-->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.6.0/dist/chart.min.js"></script>
+
+    <!-- Archivo js-->
+    <script src="js.js"></script>
+
+</body>
+</html>
